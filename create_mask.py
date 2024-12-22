@@ -181,7 +181,7 @@ if __name__ == '__main__':
     from torchmetrics.functional.image import structural_similarity_index_measure  # NOQA
     import numpy as np
     from tqdm import tqdm
-    from VGG16_new import VGG16Autoencoder
+    from VGG16_inpating import VGG16Autoencoder
 
 
 
