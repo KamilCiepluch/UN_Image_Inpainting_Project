@@ -54,8 +54,7 @@ if __name__ == '__main__':
 
     print(f"Using {device} device")
 
-    PATH = "imgs/autoenkoder_inpating/mse_perceptual/model1.pth"
-    PATH = "temp2.pth"
+    PATH = "models/inpating/mse_perceptual/model1.pth"
     # model = VGG16Autoencoder()
     new_model = torch.load(PATH)
     new_model.eval()
