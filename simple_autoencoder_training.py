@@ -2,20 +2,12 @@ import comet_ml
 
 import torch
 from torch import nn
-from torch.nn import functional as F
-
-from torch.utils.data import DataLoader
 
 import einops
-import numpy as np
 
-import matplotlib
-from matplotlib import pyplot as plt
-
-from datasets import load_dataset, DatasetDict
+from datasets import DatasetDict
 
 from torch.utils.data import DataLoader  # NOQA
-import torchvision.transforms as T
 from datasets import load_dataset  # NOQA
 
 from torchinfo import summary  # NOQA
@@ -98,7 +90,7 @@ if __name__ == '__main__':
         pin_memory=PIN_MEMORY,
     )
 
-    from VGG16 import VGG16Autoencoder
+    from models_architectures.VGG16 import VGG16Autoencoder
     model = VGG16Autoencoder()
 
     print("Model imported")

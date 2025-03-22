@@ -1,16 +1,9 @@
 import comet_ml
 import torch
-from torchvision import transforms
 from torch import nn
 from torch.nn import functional as F
-from torch.utils.data import DataLoader
 import einops
-import numpy as np
-import matplotlib
-from matplotlib import pyplot as plt
-from datasets import load_dataset, DatasetDict
 from torch.utils.data import DataLoader  # NOQA
-import torchvision.transforms as T
 from datasets import load_dataset  # NOQA
 from torchinfo import summary  # NOQA
 from tqdm import tqdm  # NOQA
@@ -19,8 +12,7 @@ from torchmetrics.functional.image import structural_similarity_index_measure  #
 import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
-from SuperresolutionAutoencoder import VGG16Autoencoder
-from create_mask import generate_scaled_blob
+from models_architectures.SuperresolutionAutoencoder import VGG16Autoencoder
 from torchvision import models
 import os
 from torch.utils.data import Dataset, DataLoader
