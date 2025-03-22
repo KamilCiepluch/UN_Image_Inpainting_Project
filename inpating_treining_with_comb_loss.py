@@ -29,7 +29,7 @@ from torchmetrics.functional.image import structural_similarity_index_measure  #
 import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
-from VGG16_inpating import VGG16Autoencoder
+from InpaintingAutoencoderWithSkipCons import VGG16Autoencoder
 from create_mask import generate_scaled_blob
 from torchvision import models
 
