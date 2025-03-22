@@ -11,7 +11,7 @@ from torchmetrics.functional.image import structural_similarity_index_measure  #
 import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
-from upscaling_treining import create_datasets
+from train_superres import create_datasets
 from torchvision import transforms
 from torch.utils.data import Dataset
 import random
